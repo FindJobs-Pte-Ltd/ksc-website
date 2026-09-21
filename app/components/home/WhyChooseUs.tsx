@@ -33,7 +33,7 @@ export default function WhyChooseUs() {
           {steps.map((step) => (
             <div
               key={step.number}
-              className="flex flex-col gap-5 border-t border-line pt-10 pb-6 last:pb-0 md:border-t-0 md:px-10 md:pt-0 md:pb-0 md:first:pl-0 md:last:pr-0"
+              className="flex flex-col gap-5 border-t border-line py-8 last:pb-0 md:border-t-0 md:px-10 md:py-0 md:first:pl-0 md:last:pr-0"
             >
               <span className="font-fraunces text-line">{step.number}</span>
               <h3 className="font-fraunces text-xl font-semibold text-dark">

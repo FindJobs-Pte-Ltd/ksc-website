@@ -44,7 +44,7 @@ export default function WhyChooseUs() {
           {reasons.map((reason) => (
             <div
               key={reason.number}
-              className="flex flex-col gap-5 border-t border-line pt-10 pb-6 last:pb-0 sm:border-t-0 sm:py-0 lg:px-10 lg:first:pl-0 lg:last:pr-0"
+              className="flex flex-col gap-5 border-t border-line py-8 last:pb-0 sm:border-t-0 sm:py-0 lg:px-10 lg:first:pl-0 lg:last:pr-0"
             >
               <span className="font-fraunces text-line">{reason.number}</span>
               <h3 className="font-fraunces text-xl font-semibold text-dark">
