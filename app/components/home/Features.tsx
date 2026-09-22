@@ -37,7 +37,7 @@ export default function Features() {
         {/* header content */}
         <div className="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
           {/* title */}
-          <h2 className="max-w-2xl font-fraunces text-3xl leading-tight font-semibold tracking-tight text-white sm:text-4xl lg:text-5xl">
+          <h2 className="font-fraunces text-3xl leading-tight font-semibold tracking-tight text-white sm:text-4xl lg:text-5xl">
             Three ways we can help.
           </h2>
           {/* description */}

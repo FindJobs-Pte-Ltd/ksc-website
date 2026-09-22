@@ -24,7 +24,7 @@ export default function AfterSalesSupport() {
             <p className="text-xs font-bold tracking-[2.16px] text-primary uppercase">
               After-Sales Support
             </p>
-            <h2 className="max-w-2xl font-fraunces text-3xl leading-tight font-semibold tracking-tight text-white sm:text-4xl lg:text-5xl">
+            <h2 className="font-fraunces text-3xl leading-tight font-semibold tracking-tight text-white sm:text-4xl lg:text-5xl">
               100% After-Sales Support
             </h2>
             <p className="max-w-md leading-relaxed text-white">

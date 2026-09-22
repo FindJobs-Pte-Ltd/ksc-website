@@ -34,7 +34,7 @@ export default function HowWeHelp() {
     <section className="bg-dark pt-16 pb-8 md:py-20 lg:py-25">
       <div className="container mx-auto flex flex-col gap-20 px-4">
         {/* section title */}
-        <h2 className="max-w-2xl font-fraunces text-3xl leading-tight font-semibold tracking-tight text-white sm:text-4xl lg:text-5xl">
+        <h2 className="font-fraunces text-3xl leading-tight font-semibold tracking-tight text-white sm:text-4xl lg:text-5xl">
           More than finding your next job.
         </h2>
 

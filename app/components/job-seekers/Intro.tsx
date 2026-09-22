@@ -19,8 +19,9 @@ export default function Intro() {
       <section className="py-16 md:py-20 lg:py-25">
         <div className="container mx-auto flex flex-col gap-6 px-4">
           {/* title */}
-          <h1 className="font-fraunces text-4xl leading-tight font-semibold tracking-tight text-dark sm:text-5xl md:max-w-[55%] lg:text-6xl xl:text-7xl xl:leading-none">
-            Your career is more than a CV.
+          <h1 className="font-fraunces text-4xl leading-tight font-semibold tracking-tight text-dark sm:text-5xl lg:text-6xl xl:text-7xl xl:leading-none">
+            Your career is more <br className="hidden md:block" />
+            than a CV.
           </h1>
           {/* description */}
           <div className="flex flex-col md:items-end">

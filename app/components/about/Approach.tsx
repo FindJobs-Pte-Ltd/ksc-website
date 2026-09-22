@@ -3,7 +3,7 @@ export default function Approach() {
     <section className="bg-dark py-16 md:py-20 lg:py-25">
       <div className="container mx-auto flex flex-col gap-10 px-4 md:flex-row md:justify-between md:gap-20">
         {/* left content */}
-        <h2 className="max-w-2xl font-fraunces text-3xl leading-tight font-semibold tracking-tight text-white sm:text-4xl lg:text-5xl">
+        <h2 className="font-fraunces text-3xl leading-tight font-semibold tracking-tight text-white sm:text-4xl lg:text-5xl">
           We listen before we match.
         </h2>
 
