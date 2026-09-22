@@ -38,7 +38,7 @@ export default function GettingStarted() {
         </div>
 
         {/* section title */}
-        <h2 className="max-w-2xl font-fraunces text-3xl leading-tight font-semibold tracking-tight text-white sm:text-4xl lg:text-5xl">
+        <h2 className="font-fraunces text-3xl leading-tight font-semibold tracking-tight text-white sm:text-4xl lg:text-5xl">
           Your next move, made simpler.
         </h2>
 
