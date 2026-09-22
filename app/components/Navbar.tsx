@@ -25,7 +25,7 @@ export default function Navbar() {
           alt="KSC Consultants"
           width={300}
           height={179}
-          className="h-12.5 w-auto"
+          className="h-14 sm:h-16 lg:h-20 w-auto"
         />
       </Link>
 
