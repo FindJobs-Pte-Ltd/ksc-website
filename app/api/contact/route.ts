@@ -25,7 +25,7 @@ export async function POST(request: NextRequest) {
   try {
     await transporter.sendMail({
       from: "KSC Consultants <noreply@mail.findjobs.com.sg>",
-      to: "hello@example.com",
+      to: "it@findjobs.com.sg",
       replyTo: email,
       subject: `[New Enquiry] ${reason} - ${name}`,
       html: generateEnquiryEmailHtml({ name, email, phone, reason, message }),
