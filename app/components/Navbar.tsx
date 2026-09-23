@@ -6,10 +6,13 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const navLinks = [
-  { label: "About", href: "/about" },
   { label: "Domestic Helper", href: "/domestic-helper" },
-  { label: "Job Seekers", href: "/job-seekers" },
-  { label: "Employers", href: "/employer" },
+  { label: "Job Seekers", href: "https://findjobs.com.sg/app", external: true },
+  {
+    label: "Employers",
+    href: "https://dashboard.findjobs.asia/signup",
+    external: true,
+  },
 ];
 
 export default function Navbar() {
@@ -38,6 +41,8 @@ export default function Navbar() {
             <Link
               key={link.href}
               href={link.href}
+              target={link.external ? "_blank" : undefined}
+              rel={link.external ? "noopener noreferrer" : undefined}
               className="group relative flex items-center whitespace-nowrap"
             >
               <span
@@ -90,6 +95,8 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
+                target={link.external ? "_blank" : undefined}
+                rel={link.external ? "noopener noreferrer" : undefined}
                 onClick={() => setIsOpen(false)}
                 className={`py-3 text-sm font-medium ${isActive ? "text-primary" : "text-muted-dark"}`}
               >
