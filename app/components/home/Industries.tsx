@@ -1,52 +1,39 @@
-const industries = [
-  { name: "Accounting" },
-  { name: "Administration & Office Support" },
-  { name: "Construction & Design", highlighted: true },
-  { name: "Customer Service" },
-  { name: "Engineering" },
-  { name: "Freight Forwarding & Logistics" },
-  { name: "Information Technology" },
-  { name: "Legal" },
-  { name: "Marketing" },
-  { name: "Property & Real Estate" },
-  { name: "Sales" },
-];
+import Image from "next/image";
 
 export default function Industries() {
   return (
-    <section className="py-16 md:py-20 lg:py-25">
-      <div className="container mx-auto flex flex-col gap-10 px-4">
-        {/* header content */}
-        <div className="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
-          {/* title */}
-          <h2 className="max-w-xl font-fraunces text-3xl leading-tight font-semibold tracking-tight text-dark sm:text-4xl lg:text-5xl">
-            Different industries. Different talent needs.
-          </h2>
-
-          {/* description */}
-          <p className="max-w-md leading-relaxed text-muted-dark">
-            Recruitment isn&apos;t one-size-fits-all. The skills that make someone
-            successful in engineering aren&apos;t the same as those required in legal,
-            technology, logistics, or sales.
-          </p>
+    <section className="pt-8 pb-16 md:py-20 lg:py-25">
+      <div className="container mx-auto flex flex-col gap-10 px-4 md:flex-row md:items-center md:justify-between">
+        {/* image */}
+        {/* TODO: swap for the image the client provides */}
+        <div className="relative order-2 aspect-4/5 w-full max-w-115 flex-1 md:order-1">
+          <Image
+            src="/employer-office.jpg"
+            alt="Supply chain professionals at work"
+            fill
+            className="object-cover"
+          />
         </div>
 
-        {/* industry list */}
-        <div className="grid border-t border-l border-line sm:grid-cols-2 lg:grid-cols-3">
-          {industries.map((industry) => (
-            <div
-              key={industry.name}
-              className={`border-r border-b border-line px-6 py-5 ${industry.highlighted ? "bg-primary/5" : ""
-                }`}
+        {/* content */}
+        <div className="order-1 flex flex-col gap-10 md:order-2">
+          <h2 className="max-w-xl font-fraunces text-3xl leading-tight font-semibold tracking-tight text-dark sm:text-4xl lg:text-5xl">
+            Your supply chain hiring partner.
+          </h2>
+          <div className="flex flex-col gap-4">
+            <p className="max-w-md leading-relaxed text-muted-dark">
+              We are the experts in PMET and C-suite placements in the
+              Supply Chain (Logistics, freight, warehousing and
+              transportation) industry
+            </p>
+            <a
+              href="mailto:susan@kschr.com"
+              className="flex w-fit items-center gap-2 bg-primary px-4 py-3 text-sm font-bold text-white transition-colors duration-200 hover:bg-muted-dark"
             >
-              <p
-                className={`font-fraunces font-semibold ${industry.highlighted ? "text-primary" : "text-dark"
-                  }`}
-              >
-                {industry.name}
-              </p>
-            </div>
-          ))}
+              Email Us
+              <span aria-hidden>→</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>

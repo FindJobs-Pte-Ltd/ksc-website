@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -12,32 +11,21 @@ export default function Hero() {
         </p>
 
         {/* main title */}
-        <h1 className="max-w-2xl font-fraunces text-4xl leading-tight font-semibold tracking-tight text-dark sm:text-5xl lg:text-6xl xl:text-7xl xl:leading-none">
-          The right people can change everything.
-        </h1>
+        <div className="flex max-w-2xl flex-col gap-3 font-fraunces font-semibold">
+          <h1 className="text-3xl leading-tight tracking-tight text-dark sm:text-4xl lg:text-5xl xl:text-6xl">
+            Singapore manpower solution agency
+          </h1>
+          <p className="text-lg leading-tight text-primary sm:text-xl">
+            (MOM Comprehensive License 11C2878) established in 2011.
+          </p>
+        </div>
 
         {/* subtitle */}
-        <p className="max-w-md leading-relaxed text-muted-dark">
-          KSC connects businesses with people who can make a difference—and helps
-          professionals find opportunities worth making their next move for.
+        <p className="max-w-lg leading-relaxed text-muted-dark">
+          We are the top agency covering the placement for MDW (Migrant
+          Domestic Workers), Blue Collar workers (Local &amp; Foreign) &amp;
+          White Collar Professionals (PMETs).
         </p>
-
-        {/* button links */}
-        <div className="flex flex-wrap gap-4">
-          <Link
-            href="/employer"
-            className="flex items-center gap-2 bg-primary px-4 py-3 text-sm font-bold text-white transition-colors duration-200 hover:bg-muted-dark"
-          >
-            For Employers
-            <span aria-hidden>→</span>
-          </Link>
-          <Link
-            href="/job-seekers"
-            className="flex items-center gap-2 border border-primary bg-white px-4 py-3 text-sm font-bold text-primary transition-colors duration-200 hover:bg-primary/10"
-          >
-            For Job Seekers
-          </Link>
-        </div>
 
         <div className="flex items-center gap-4">
           <span className="h-px w-12 bg-line" />

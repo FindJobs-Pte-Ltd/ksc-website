@@ -1,76 +1,46 @@
-const services = [
-  {
-    number: "01",
-    title: "Executive Search & Selection",
-    subtitle: "When the right person matters most.",
-    description:
-      "For senior and specialist positions, we take a focused approach to identifying professionals with the experience, capabilities, and fit required for critical roles.",
-  },
-  {
-    number: "02",
-    title: "Recruitment",
-    subtitle: "Good recruitment starts with understanding.",
-    description:
-      "We take the time to understand the role, your business, and what success looks like before connecting you with relevant professionals.",
-  },
-  {
-    number: "03",
-    title: "Temporary & Contract Staff",
-    subtitle: "The right people, when you need them.",
-    description:
-      "Flexible staffing solutions for projects, temporary gaps, and changing workforce requirements.",
-  },
-];
+import Image from "next/image";
 
 export default function Services() {
   return (
-    <section className="bg-dark py-16 md:py-20 lg:py-25">
-      <div className="container mx-auto flex flex-col gap-20 px-4">
-        {/* section title */}
-        <div className="flex flex-col gap-6">
-          <p className="text-xs font-medium tracking-[2.16px] text-primary uppercase">
-            What we do
-          </p>
-          <h2 className="max-w-2xl font-fraunces text-3xl leading-tight font-semibold tracking-tight text-white sm:text-4xl lg:text-5xl">
-            Recruitment that fits the role—and the business behind it.
+    <section className="py-8 md:py-20 lg:py-25">
+      <div className="container mx-auto flex flex-col gap-10 px-4 md:flex-row md:items-center">
+        {/* text content */}
+        <div className="flex flex-1 flex-col gap-10">
+          <h2 className="max-w-xl font-fraunces text-3xl leading-tight font-semibold tracking-tight text-dark sm:text-4xl lg:text-5xl">
+            Your blue collar hiring partner in Singapore.
           </h2>
-        </div>
-
-        {/* service list */}
-        <div className="flex flex-col gap-10">
-          {services.map((service) => (
-            <div key={service.number} className="flex gap-10">
-              {/* service number */}
-              <span className="font-fraunces text-primary/50">{service.number}</span>
-
-              {/* title, subtitle, description */}
-              <div className="flex flex-1 flex-col gap-4 md:flex-row md:gap-10">
-                <div className="flex flex-col gap-2 md:flex-1">
-                  <h3 className="font-fraunces text-xl font-semibold text-white">
-                    {service.title}
-                  </h3>
-                  <p className="font-fraunces text-sm text-primary italic">
-                    {service.subtitle}
-                  </p>
-                </div>
-
-                <p className="text-sm leading-relaxed text-muted md:max-w-md">
-                  {service.description}
-                </p>
-              </div>
+          <div className="flex flex-col gap-4">
+            <div className="flex max-w-md flex-col gap-4 leading-relaxed text-muted-dark">
+              <p>
+                We are the best agency to support your blue collar hiring in
+                Singapore with over 200k local (Singaporean &amp; PR)
+                candidates in our database
+              </p>
+              <p>
+                Our expertise covers warehouse workers, cleaners, retail
+                staff, F&amp;B crews and more!
+              </p>
             </div>
-          ))}
+            <a
+              href="mailto:stanley@kschr.com"
+              className="flex w-fit items-center gap-2 bg-primary px-4 py-3 text-sm font-bold text-white transition-colors duration-200 hover:bg-muted-dark"
+            >
+              Email Us
+              <span aria-hidden>→</span>
+            </a>
+          </div>
         </div>
 
-        {/* not use temporary — no /services page exists yet
-        <Link
-          href="/services"
-          className="flex w-fit items-center gap-3 text-sm font-bold text-white"
-        >
-          View all Services
-          <span aria-hidden>→</span>
-        </Link>
-        */}
+        {/* image */}
+        {/* TODO: swap for the image the client provides */}
+        <div className="relative mx-auto aspect-4/5 w-full max-w-115 flex-1">
+          <Image
+            src="/employer-office.jpg"
+            alt="Blue collar workers at work"
+            fill
+            className="object-cover"
+          />
+        </div>
       </div>
     </section>
   );
