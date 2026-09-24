@@ -6,7 +6,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const navLinks = [
-  { label: "Domestic Helper", href: "/domestic-helper" },
+  { label: "Hire MDW now", href: "/domestic-helper" },
   { label: "Job Seekers", href: "https://findjobs.com.sg/app", external: true },
   {
     label: "Employers",
