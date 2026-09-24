@@ -21,9 +21,9 @@ export default function Industries() {
           </h2>
           <div className="flex flex-col gap-4">
             <p className="max-w-md leading-relaxed text-muted-dark">
-              We are the experts in PMET and C-suite placements in the
-              Supply Chain (Logistics, freight, warehousing and
-              transportation) industry
+              We are the top headhunters in the Supply Chain (Logistics,
+              freight, warehousing and transportation) industry, covering
+              both PMET and C-suite positions
             </p>
             <a
               href="mailto:susan@kschr.com"
