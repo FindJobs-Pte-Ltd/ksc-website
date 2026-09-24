@@ -12,7 +12,7 @@ const steps = [
     image: "/domestic-helper-prepare-2.png",
     title: "Personalised Preparation, Every Step of the Way",
     description:
-      "Our process starts by assessing your household's specific needs to develop a tailored daily routine. Your helper then participates in a thorough orientation and intensive hands-on practice to boost her confidence.",
+      "Our process starts by assessing your household's specific needs to enable us to develop a tailored daily routine. Your prospective helper will then participate in a thorough orientation and intensive hands-on practice to enhance her job-readiness.",
   },
   {
     image: "/domestic-helper-prepare-3.png",
