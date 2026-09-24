@@ -3,13 +3,13 @@ import Link from "next/link";
 
 const features = [
   {
-    title: "1 Dedicated Support Team",
-    description: "Always ready to assist you and your helper",
+    title: "Dedicated Support Team Online",
+    description: "Our support team is always available to guide you and your helper.",
   },
   {
-    title: "14 Check-Ins in 12 Months",
+    title: "Warm and Reassuring",
     description:
-      "Ongoing guidance with scheduled check-ins to ensure smooth caregiving",
+      "Experience peace of mind with 6 scheduled check-ins over 6 months. Continuous support ensures a smooth and loving caregiving journey.",
   },
 ];
 
@@ -25,11 +25,8 @@ export default function AfterSalesSupport() {
               After-Sales Support
             </p>
             <h2 className="font-fraunces text-3xl leading-tight font-semibold tracking-tight text-white sm:text-4xl lg:text-5xl">
-              100% After-Sales Support
+              Hire your helper with ease of mind
             </h2>
-            <p className="max-w-md leading-relaxed text-white">
-              Dedicated support team for your peace of mind
-            </p>
           </div>
 
           {/* features */}
@@ -75,8 +72,8 @@ export default function AfterSalesSupport() {
             </div>
 
             <p className="leading-relaxed text-white">
-              Not happy after your 1st replacement?{" "}
-              <span className="font-bold">No problem!</span>
+              Your happiness is our priority, so if the first replacement
+              doesn&apos;t work out, we&apos;ve got you covered.
             </p>
           </div>
 
@@ -91,7 +88,10 @@ export default function AfterSalesSupport() {
               </p>
             </div>
 
-            <p className="text-muted">*Terms and conditions apply</p>
+            <div className="flex flex-col gap-1 text-muted">
+              <p>We return your money with absolutely no hassle.</p>
+              <p>*Terms and conditions apply.</p>
+            </div>
 
             <Link
               href="/contact"

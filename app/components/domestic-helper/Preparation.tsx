@@ -4,21 +4,21 @@ import Image from "next/image";
 const steps = [
   {
     image: "/domestic-helper-prepare-1.png",
-    title: "Regular Process Update",
+    title: "Service-Focused",
     description:
-      "Get 5 key updates on your helper's preparation progress, with each stage tracked to ensure full readiness",
+      "We keep you informed through 5 essential preparation milestones, so you know your helper is ready at every stage.",
   },
   {
     image: "/domestic-helper-prepare-2.png",
-    title: "Highly Personalised Preparation",
+    title: "Personalised Preparation, Every Step of the Way",
     description:
-      "We gather 31 key points to create your helper's routine card, followed by 35 days of preparation and 7 days of practical.",
+      "Our process starts by assessing your household's specific needs to develop a tailored daily routine. Your helper then participates in a thorough orientation and intensive hands-on practice to boost her confidence.",
   },
   {
     image: "/domestic-helper-prepare-3.png",
-    title: "Home Deployment Orientation",
+    title: "A Smooth Start at Home",
     description:
-      "Our deployment specialist conducts an 11-point, 1-hour orientation in your home, covering daily routines, elderly medication, and home maintenance",
+      "While you wait to fetch your helper, we spend an hour briefing her on your daily routines, elderly care needs, and home maintenance so she is fully prepared for her first day.",
   },
 ];
 
@@ -28,7 +28,7 @@ export default function Preparation() {
       <div className="container mx-auto flex flex-col gap-10 px-4">
         {/* title */}
         <h2 className="max-w-xl font-fraunces text-3xl leading-tight font-semibold tracking-tight text-dark sm:text-4xl lg:text-5xl">
-          Prepare to Provide Exceptional Elderly Care
+          Getting Your Helper Ready
         </h2>
 
         {/* steps */}
