@@ -31,7 +31,11 @@ export default function Footer() {
 
           {/* certifications */}
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/bizsafe.png" alt="bizSAFE 3" className="h-20 w-auto" />
+          <img
+            src="/bizsafe.png"
+            alt="bizSAFE 3"
+            className="h-20 w-auto self-start md:self-center"
+          />
         </div>
 
         {/* footer bottom content */}
