@@ -6,6 +6,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const navLinks = [
+  { label: "Home", href: "/" },
   { label: "Hire MDW now", href: "/domestic-helper" },
   { label: "Job Seekers", href: "https://findjobs.com.sg/app", external: true },
   {
@@ -88,13 +89,6 @@ export default function Navbar() {
       {/* mobile menu panel */}
       {isOpen && (
         <div className="absolute top-full right-0 left-0 flex flex-col gap-1 border-t border-line bg-white px-6 py-4 shadow-lg lg:hidden">
-          <Link
-            href="/"
-            onClick={() => setIsOpen(false)}
-            className={`py-3 text-sm font-medium ${pathname === "/" ? "text-primary" : "text-muted-dark"}`}
-          >
-            Home
-          </Link>
           {navLinks.map((link) => {
             const isActive = pathname === link.href;
 
