@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Image from "next/image";
 
 export default function CTA() {
   return (
@@ -15,13 +15,17 @@ export default function CTA() {
         </div>
 
         {/* right content */}
-        <Link
-          href="/contact"
+        <a
+          href="https://wa.me/6582337670"
+          target="_blank"
+          rel="noopener noreferrer"
           className="flex shrink-0 items-center gap-2 self-start border border-primary bg-white px-4 py-3 text-sm font-bold whitespace-nowrap text-primary transition-colors duration-200 hover:bg-surface md:self-auto"
         >
-          Enquire About a Domestic Helper
-          <span aria-hidden>→</span>
-        </Link>
+          <span className="flex h-5 w-5 items-center justify-center rounded-full bg-primary">
+            <Image src="/icon-whatsapp.svg" alt="" width={12} height={12} />
+          </span>
+          WhatsApp Us
+        </a>
       </div>
     </section>
   );
