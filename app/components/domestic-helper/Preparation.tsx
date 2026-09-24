@@ -6,7 +6,7 @@ const steps = [
     image: "/domestic-helper-prepare-1.png",
     title: "Service-Focused",
     description:
-      "We keep you informed through 5 essential preparation milestones, so you know your helper is ready at every stage.",
+      "We will run through all the 5 essential preparation milestones to ensure that your helper is ready at every stage.",
   },
   {
     image: "/domestic-helper-prepare-2.png",
