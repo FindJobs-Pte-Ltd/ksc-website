@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer className="bg-surface py-16 md:py-20 lg:py-25">
@@ -47,6 +49,21 @@ export default function Footer() {
           <p className="text-xs font-medium tracking-[2.16px] text-muted-dark uppercase">
             © 2026 KSC Consultants. All rights reserved.
           </p>
+
+          <div className="flex items-center gap-6">
+            <Link
+              href="/privacy-policy"
+              className="text-xs font-medium tracking-[2.16px] text-muted-dark uppercase hover:text-primary"
+            >
+              Privacy Policy
+            </Link>
+            <Link
+              href="/disclaimer"
+              className="text-xs font-medium tracking-[2.16px] text-muted-dark uppercase hover:text-primary"
+            >
+              Disclaimer
+            </Link>
+          </div>
         </div>
       </div>
     </footer>
