@@ -5,11 +5,6 @@ export default function Hero() {
     <section className="flex flex-col items-center gap-10 pt-12 pb-6 md:flex-row md:items-center md:gap-16 md:py-0">
       {/* left side */}
       <div className="flex min-w-0 flex-1 flex-col justify-center gap-6 px-6 md:gap-8 md:pl-12 lg:gap-10 lg:pl-20">
-        {/* kicker text */}
-        <p className="text-xs font-medium tracking-[2.16px] text-primary uppercase">
-          KSC Consultants
-        </p>
-
         {/* main title */}
         <div className="max-w-2xl font-fraunces font-semibold">
           <h1 className="text-xl leading-tight tracking-tight text-dark sm:text-2xl lg:text-3xl xl:text-4xl">
