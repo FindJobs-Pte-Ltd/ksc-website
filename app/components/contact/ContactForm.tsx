@@ -87,7 +87,12 @@ export default function ContactForm() {
               <p className="text-xs font-medium tracking-[2.16px] text-muted-dark uppercase">
                 Email
               </p>
-              <p className="mt-1 font-semibold text-dark">hr@kschr.com</p>
+              <a
+                href="mailto:hr@kschr.com"
+                className="mt-1 block font-semibold text-dark hover:text-primary"
+              >
+                hr@kschr.com
+              </a>
             </div>
           </div>
 
