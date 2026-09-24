@@ -23,28 +23,29 @@ export default function Footer() {
                 We are a Singapore social enterprise, a member of raiSE SG.
               </p>
             </div>
-
-            <p className="text-xs font-medium tracking-[2.16px] text-primary uppercase">
-              Est. 2011
-            </p>
           </div>
 
           {/* certifications */}
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/bizsafe.png"
-            alt="bizSAFE 3"
-            className="h-20 w-auto self-start md:self-center"
-          />
+          <div className="flex items-center gap-4 self-start md:self-center">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/bizsafe.png"
+              alt="bizSAFE 3"
+              className="h-20 w-auto"
+            />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/raise-verified-leading.png"
+              alt="raiSE Verified Leading Social Enterprise 2025"
+              className="h-20 w-auto"
+            />
+          </div>
         </div>
 
         {/* footer bottom content */}
         <div className="flex flex-col gap-4 border-t border-line pt-8 md:flex-row md:items-center md:justify-between">
           <p className="text-xs font-medium tracking-[2.16px] text-muted-dark uppercase">
             © 2026 KSC Consultants. All rights reserved.
-          </p>
-          <p className="text-xs font-medium tracking-[2.16px] text-muted-dark uppercase">
-            Recruitment Consultancy
           </p>
         </div>
       </div>
