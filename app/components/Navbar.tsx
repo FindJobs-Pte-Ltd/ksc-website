@@ -105,6 +105,13 @@ export default function Navbar() {
             );
           })}
           <Link
+            href="/privacy-policy"
+            onClick={() => setIsOpen(false)}
+            className={`py-3 text-sm font-medium ${pathname === "/privacy-policy" ? "text-primary" : "text-muted-dark"}`}
+          >
+            Privacy Policy
+          </Link>
+          <Link
             href="/contact"
             onClick={() => setIsOpen(false)}
             className="mt-2 rounded bg-primary px-4 py-3 text-center text-sm font-bold text-white transition-colors duration-200 hover:bg-muted-dark"
