@@ -72,8 +72,9 @@ export default function AfterSalesSupport() {
             </div>
 
             <p className="leading-relaxed text-white">
-              Your happiness is our priority, so if the first replacement
-              doesn&apos;t work out, we&apos;ve got you covered.
+              Your satisfaction with our service is our top priority, if
+              your first hire doesn&apos;t work out, we&apos;ve got you
+              covered.
             </p>
           </div>
 

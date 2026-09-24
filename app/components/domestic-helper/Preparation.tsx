@@ -18,7 +18,7 @@ const steps = [
     image: "/domestic-helper-prepare-3.png",
     title: "A Smooth Start at Home",
     description:
-      "While you wait to fetch your helper, we spend an hour briefing her on your daily routines, elderly care needs, and home maintenance so she is fully prepared for her first day.",
+      "Before we hand over to you your helper, we will brief her on your daily routines, including your elderly or children care needs as well your required house chores to ensure that she is fully prepared for her first day.",
   },
 ];
 

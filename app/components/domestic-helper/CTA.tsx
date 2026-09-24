@@ -7,11 +7,10 @@ export default function CTA() {
         {/* left content */}
         <div className="flex flex-col gap-6 text-white">
           <h2 className="max-w-xl font-fraunces text-3xl leading-tight font-semibold tracking-tight sm:text-4xl lg:text-5xl">
-            Let&apos;s find the right fit for your household.
+            Let us find the right helper for your household.
           </h2>
           <p className="max-w-md leading-relaxed">
-            Tell us what you are looking for, and our consultants can help you
-            take the next step.
+            Share with us your requirements now
           </p>
         </div>
 
