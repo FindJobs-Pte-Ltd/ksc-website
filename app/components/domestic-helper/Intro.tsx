@@ -32,10 +32,9 @@ export default function Intro() {
       </div>
 
       {/* right side */}
-      {/* TODO: swap for the team photo from the client flyer */}
-      <div className="relative mx-auto aspect-705/813 w-full max-w-sm bg-line md:mx-0 md:w-1/2 md:max-w-none xl:h-[min(calc(100vh-98px),813px)] xl:w-auto xl:shrink-0">
+      <div className="relative mx-auto aspect-3/2 w-full max-w-lg bg-line md:mx-0 md:w-1/2 md:max-w-none">
         <Image
-          src="/domestic-helper-hero.jpg"
+          src="/domestic-helper-team.png"
           alt="KSC domestic helper team"
           fill
           className="object-cover"
