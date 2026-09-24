@@ -101,7 +101,9 @@ export default function Pricing() {
           <div className="border-x border-b border-primary bg-surface p-5">
             <div className="flex items-center justify-between text-primary">
               <p className="text-xs font-bold tracking-[2.16px] uppercase">
-                Total Cost of Hire (Excluding Placement Fee)
+                Total Cost of Hire
+                <br />
+                (Excluding Placement Fee)
               </p>
               <p className="font-fraunces text-3xl font-semibold">
                 $1,946.30
