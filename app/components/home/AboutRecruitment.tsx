@@ -25,9 +25,8 @@ export default function AboutRecruitment() {
               We offer the lowest Agency Fee in Singapore!
             </p>
           </div>
-          {/* TODO: replace with the WhatsApp number Ivan provides */}
           <a
-            href="https://wa.me/6500000000"
+            href="https://wa.me/6582337670"
             target="_blank"
             rel="noopener noreferrer"
             className="flex w-fit items-center gap-2 bg-primary px-4 py-3 text-sm font-bold text-white transition-colors duration-200 hover:bg-muted-dark"
