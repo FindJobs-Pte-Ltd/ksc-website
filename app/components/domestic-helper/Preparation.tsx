@@ -27,7 +27,7 @@ export default function Preparation() {
     <section className="pt-8 pb-16 md:py-20 lg:py-25">
       <div className="container mx-auto flex flex-col gap-10 px-4">
         {/* title */}
-        <h2 className="max-w-xl font-fraunces text-3xl leading-tight font-semibold tracking-tight text-dark sm:text-4xl lg:text-5xl">
+        <h2 className="font-fraunces text-3xl leading-tight font-semibold tracking-tight text-dark sm:text-4xl lg:text-5xl">
           Getting Your Helper Ready
         </h2>
 
