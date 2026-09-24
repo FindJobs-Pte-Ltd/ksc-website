@@ -5,11 +5,10 @@ export default function Industries() {
     <section className="pt-8 pb-16 md:py-20 lg:py-25">
       <div className="container mx-auto flex flex-col gap-10 px-4 md:flex-row md:items-center md:justify-between">
         {/* image */}
-        {/* TODO: swap for the image the client provides */}
         <div className="relative order-2 aspect-4/5 w-full max-w-115 flex-1 md:order-1">
           <Image
-            src="/employer-office.jpg"
-            alt="Supply chain professionals at work"
+            src="/team-yang-lijie-susan.png"
+            alt="KSC consultant Yang Lijie Susan"
             fill
             className="object-cover"
           />

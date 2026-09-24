@@ -5,11 +5,10 @@ export default function AboutRecruitment() {
     <section className="py-8 md:py-20 lg:py-25">
       <div className="container mx-auto flex flex-col gap-10 px-4 md:flex-row md:items-center md:justify-between">
         {/* image */}
-        {/* TODO: swap for the image the client provides */}
         <div className="relative order-2 aspect-4/5 w-full max-w-115 flex-1 md:order-1">
           <Image
-            src="/domestic-helper-hero.jpg"
-            alt="Domestic helper at work"
+            src="/team-ho-fong-yau.png"
+            alt="KSC consultant Ho Fong Yau"
             fill
             className="object-cover"
           />

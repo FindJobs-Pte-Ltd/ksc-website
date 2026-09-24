@@ -32,11 +32,10 @@ export default function Services() {
         </div>
 
         {/* image */}
-        {/* TODO: swap for the image the client provides */}
         <div className="relative mx-auto aspect-4/5 w-full max-w-115 flex-1">
           <Image
-            src="/employer-office.jpg"
-            alt="Blue collar workers at work"
+            src="/team-stanley.png"
+            alt="KSC consultant Stanley"
             fill
             className="object-cover"
           />

@@ -36,10 +36,10 @@ export default function Hero() {
       {/* right side */}
       <div className="relative mx-auto aspect-705/813 w-full max-w-sm bg-line md:mx-0 md:w-1/2 md:max-w-none xl:h-[min(calc(100vh-98px),813px)] xl:w-auto xl:shrink-0">
         <Image
-          src="/hero-portrait.jpg"
+          src="/team-group.jpg"
           alt="KSC team"
           fill
-          className="object-cover object-[50%_46%]"
+          className="object-cover"
           priority
         />
       </div>
