@@ -11,13 +11,11 @@ export default function Hero() {
         </p>
 
         {/* main title */}
-        <div className="flex max-w-2xl flex-col gap-3 font-fraunces font-semibold">
-          <h1 className="text-3xl leading-tight tracking-tight text-dark sm:text-4xl lg:text-5xl xl:text-6xl">
-            Singapore manpower solution agency
+        <div className="max-w-2xl font-fraunces font-semibold">
+          <h1 className="text-xl leading-tight tracking-tight text-dark sm:text-2xl lg:text-3xl xl:text-4xl">
+            KSC is a Singapore manpower solution agency (MOM Comprehensive
+            License 11C2878) established in 2011.
           </h1>
-          <p className="text-lg leading-tight text-primary sm:text-xl">
-            (MOM Comprehensive License 11C2878) established in 2011.
-          </p>
         </div>
 
         {/* subtitle */}
@@ -26,11 +24,6 @@ export default function Hero() {
           Domestic Workers), Blue Collar workers (Local &amp; Foreign) &amp;
           White Collar Professionals (PMETs).
         </p>
-
-        <div className="flex items-center gap-4">
-          <span className="h-px w-12 bg-line" />
-          <span className="text-xs tracking-[1.2px] text-muted-dark uppercase">Scroll</span>
-        </div>
       </div>
 
       {/* right side */}
