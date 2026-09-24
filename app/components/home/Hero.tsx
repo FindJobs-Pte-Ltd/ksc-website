@@ -34,7 +34,7 @@ export default function Hero() {
       </div>
 
       {/* right side */}
-      <div className="relative mx-auto aspect-705/813 w-full max-w-sm bg-line md:mx-0 md:w-1/2 md:max-w-none xl:h-[min(calc(100vh-98px),813px)] xl:w-auto xl:shrink-0">
+      <div className="relative mx-auto aspect-6/5 w-full max-w-lg md:mx-0 md:w-1/2 md:max-w-xl">
         <Image
           src="/team-group.jpg"
           alt="KSC team"
