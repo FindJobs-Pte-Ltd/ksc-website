@@ -1,6 +1,4 @@
 import { NextRequest, NextResponse } from "next/server";
-import nodemailer from "nodemailer";
-import { MailgunTransport } from "mailgun-nodemailer-transport";
 import { generateEnquiryEmailHtml } from "./emailTemplate";
 
 export async function POST(request: NextRequest) {
@@ -13,23 +11,38 @@ export async function POST(request: NextRequest) {
     );
   }
 
-  const transporter = nodemailer.createTransport(
-    new MailgunTransport({
-      auth: {
-        apiKey: process.env.EMAIL_API_KEY ?? "",
-        domain: process.env.EMAIL_DOMAIN ?? "",
-      },
-    }),
+  const domain = process.env.EMAIL_DOMAIN ?? "";
+  const apiKey = process.env.EMAIL_API_KEY ?? "";
+
+  const form = new FormData();
+  form.append("from", "KSC Consultants <noreply@mail.findjobs.com.sg>");
+  form.append("to", "it@findjobs.com.sg");
+  form.append("h:Reply-To", email);
+  form.append("subject", `[New Enquiry] ${reason} - ${name}`);
+  form.append(
+    "html",
+    generateEnquiryEmailHtml({ name, email, phone, reason, message }),
   );
 
   try {
-    await transporter.sendMail({
-      from: "KSC Consultants <noreply@mail.findjobs.com.sg>",
-      to: "it@findjobs.com.sg",
-      replyTo: email,
-      subject: `[New Enquiry] ${reason} - ${name}`,
-      html: generateEnquiryEmailHtml({ name, email, phone, reason, message }),
-    });
+    const res = await fetch(
+      `https://api.mailgun.net/v3/${domain}/messages`,
+      {
+        method: "POST",
+        headers: {
+          Authorization: `Basic ${Buffer.from(`api:${apiKey}`).toString("base64")}`,
+        },
+        body: form,
+      },
+    );
+
+    if (!res.ok) {
+      console.error("Failed to send enquiry email:", await res.text());
+      return NextResponse.json(
+        { error: "Failed to send enquiry" },
+        { status: 500 },
+      );
+    }
 
     return NextResponse.json({ success: true });
   } catch (error) {

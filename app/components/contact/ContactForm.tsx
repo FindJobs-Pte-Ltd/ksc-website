@@ -38,15 +38,87 @@ export default function ContactForm() {
 
   return (
     <section className="bg-surface py-16 md:py-20 lg:py-25">
-      <div className="container mx-auto flex flex-col gap-10 px-4 lg:flex-row lg:gap-30">
-        {/* image */}
-        <div className="relative aspect-3/2 w-full flex-1 lg:aspect-3/4">
-          <Image
-            src="/contact-office.jpg"
-            alt="Modern office workspace"
-            fill
-            className="object-cover"
-          />
+      <div className="container mx-auto flex flex-col gap-10 px-4 lg:flex-row lg:items-start lg:gap-30">
+        {/* address */}
+        <div className="flex flex-1 flex-col gap-8 border border-line bg-white p-8 shadow-sm sm:p-10">
+          <div className="flex items-center gap-4">
+            <Image
+              src="/icon-location.svg"
+              alt=""
+              width={24}
+              height={24}
+              className="shrink-0"
+            />
+            <div>
+              <p className="text-xs font-medium tracking-[2.16px] text-muted-dark uppercase">
+                Address
+              </p>
+              <p className="mt-1 leading-relaxed font-semibold text-dark">
+                20A Tampines North Drive 2, #01-05 Singapore 529511
+              </p>
+            </div>
+          </div>
+
+          <div className="flex items-center gap-4">
+            <Image
+              src="/icon-phone.svg"
+              alt=""
+              width={24}
+              height={24}
+              className="shrink-0"
+            />
+            <div>
+              <p className="text-xs font-medium tracking-[2.16px] text-muted-dark uppercase">
+                Phone
+              </p>
+              <p className="mt-1 font-semibold text-dark">+65 8233 7670</p>
+            </div>
+          </div>
+
+          <div className="flex items-center gap-4">
+            <Image
+              src="/icon-mail.svg"
+              alt=""
+              width={24}
+              height={24}
+              className="shrink-0"
+            />
+            <div>
+              <p className="text-xs font-medium tracking-[2.16px] text-muted-dark uppercase">
+                Email
+              </p>
+              <a
+                href="mailto:hr@kschr.com"
+                className="mt-1 block font-semibold text-dark hover:text-primary"
+              >
+                hr@kschr.com
+              </a>
+            </div>
+          </div>
+
+          <div className="flex flex-col gap-3 border-t border-line pt-8">
+            <p className="font-fraunces text-xl font-semibold text-dark">
+              Opening Hours
+            </p>
+            <div className="flex flex-col gap-1 text-sm text-muted-dark">
+              <p>
+                <span className="font-semibold text-dark">
+                  Monday - Friday:
+                </span>{" "}
+                9.00 AM - 6.00 PM
+              </p>
+              <p>
+                <span className="font-semibold text-dark">Saturday:</span>{" "}
+                9.00 AM - 1.00 PM
+              </p>
+              <p>
+                <span className="font-semibold text-dark">
+                  Sunday &amp; Public Holidays:
+                </span>{" "}
+                Closed
+              </p>
+            </div>
+          </div>
         </div>
 
         {/* form */}
