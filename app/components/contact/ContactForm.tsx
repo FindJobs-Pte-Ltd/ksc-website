@@ -10,9 +10,9 @@ export default function ContactForm() {
 
   async function handleSubmit(event: SubmitEvent<HTMLFormElement>) {
     event.preventDefault();
+    const form = event.currentTarget;
+    const formData = new FormData(form);
     setStatus("sending");
-
-    const formData = new FormData(event.currentTarget);
 
     try {
       const res = await fetch("/api/contact", {
@@ -30,8 +30,9 @@ export default function ContactForm() {
       if (!res.ok) throw new Error("Request failed");
 
       setStatus("sent");
-      event.currentTarget.reset();
-    } catch {
+      form.reset();
+    } catch (error) {
+      console.error("Failed to submit contact form:", error);
       setStatus("error");
     }
   }
