@@ -22,7 +22,7 @@ const steps = [
   },
 ];
 
-export default function Preparation() {
+export default function Services() {
   return (
     <section className="pt-8 pb-16 md:py-20 lg:py-25">
       <div className="container mx-auto flex flex-col gap-10 px-4">
