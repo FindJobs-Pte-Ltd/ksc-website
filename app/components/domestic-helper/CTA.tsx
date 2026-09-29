@@ -7,7 +7,7 @@ export default function CTA() {
         {/* left content */}
         <div className="flex flex-col gap-6 text-white">
           <h2 className="max-w-xl font-fraunces text-3xl leading-tight font-semibold tracking-tight sm:text-4xl lg:text-5xl">
-            Let us find the right helper for your household.
+            Let KSC help you to hire your maid with ease.
           </h2>
           <p className="max-w-md leading-relaxed">
             Share with us your requirements now
