@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { trackWhatsAppClick } from "../../lib/google-ads";
 
 export default function AboutRecruitment() {
   return (
@@ -26,6 +29,7 @@ export default function AboutRecruitment() {
           </div>
           <a
             href="https://wa.me/6582337670"
+            onClick={trackWhatsAppClick}
             target="_blank"
             rel="noopener noreferrer"
             className="flex w-fit items-center gap-2 bg-primary px-4 py-3 text-sm font-bold text-white transition-colors duration-200 hover:bg-muted-dark"

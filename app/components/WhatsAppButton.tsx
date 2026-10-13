@@ -1,9 +1,13 @@
+"use client";
+
 import Image from "next/image";
+import { trackWhatsAppClick } from "../lib/google-ads";
 
 export default function WhatsAppButton() {
   return (
     <a
       href="https://wa.me/6582337670"
+      onClick={trackWhatsAppClick}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat with KSC on WhatsApp"

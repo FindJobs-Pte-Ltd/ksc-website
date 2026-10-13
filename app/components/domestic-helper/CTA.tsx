@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { trackWhatsAppClick } from "../../lib/google-ads";
 
 export default function CTA() {
   return (
@@ -17,6 +20,7 @@ export default function CTA() {
         {/* right content */}
         <a
           href="https://wa.me/6582337670"
+          onClick={trackWhatsAppClick}
           target="_blank"
           rel="noopener noreferrer"
           className="flex shrink-0 items-center gap-2 self-start border border-primary bg-white px-4 py-3 text-sm font-bold whitespace-nowrap text-primary transition-colors duration-200 hover:bg-surface md:self-auto"
